@@ -18,7 +18,4 @@ interface RoomAnotacoesDAO {
     @Delete
     fun deletarAnotacao(anotacoes: Anotacoes)
 
-    @Query("DELETE FROM Anotacoes WHERE codigo > :codigoAnotacao")
-    fun deletarAnotacaoComCodigo(codigoAnotacao: Int)
-
 }
